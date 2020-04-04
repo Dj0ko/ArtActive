@@ -12,25 +12,15 @@
       <a class="main-nav__logo">Artactive</a>
       <button class="main-nav__toogle" type="button">Открыть меню</button>
       <ul class="main-nav__list">
-        <li class="main-nav__item"><a href="#info">О нас</a></li>
-        <li class="main-nav__item"><a href="#services">Услуги</a></li>
-        <li class="main-nav__item"><a href="#comments">Отзывы</a></li>
-        <li class="main-nav__item"><a href="#faq">FAQ</a></li>
-        <li class="main-nav__item"><a href="#contacts">Контакты</a></li>
+        <li class="main-nav__list-item"><a href="#about">О нас</a></li>
+        <li class="main-nav__list-item"><a href="#services">Услуги</a></li>
+        <li class="main-nav__list-item"><a href="#comments">Отзывы</a></li>
+        <li class="main-nav__list-item"><a href="#faq">FAQ</a></li>
+        <li class="main-nav__list-item"><a href="#contacts">Контакты</a></li>
       </ul>
-      <a class="main-nav__tel" href="tel:+79201488131">+7 (920) 148 81 31</a>
-      <button class="button" type="button">Заказать звонок</button>
+      <a class="main-nav__phone-link" href="tel:+79201488131">+7 (920) 148 81 31</a>
+      <button class="button main-nav__button" type="button">Заказать звонок</button>
     </nav>
-
-    <section class="form visually-hidden">
-      <i class="form__text">Есть вопросы?</i>
-      <b class="text text--bold">Закажите звонок</b>
-      <form>
-        <input class="form__input" type="text" name="first-name" placeholder="Имя">
-        <input class="form__input" type="tel" name="phone" placeholder="Телефон">
-        <button class="button" type="button">Отправить</button>
-      </form>
-    </section>
   </header>
 
   <main class="page-main">
@@ -38,39 +28,39 @@
     <section class="hero">
       <h1 class="hero__title">Размер не имеет значения!</h1>
       <p class="hero__text">Оперативная полиграфия и широкоформатная печать любого размера</p>
-      <button class="button" type="button">Заказать печать</button>
-      <p class="hero__text hero__text--small">с доставкой по Ярославлю и Ярославской области</p>
+      <button class="button hero__button" type="button">Заказать печать</button>
+      <p class="hero__text hero__text--alt">с доставкой по Ярославлю и Ярославской области</p>
     </section>
 
-    <section class="info">
-      <h2 class="second-title" id="info">1.О нас</h2>
-      <h3 class="third-title">Полный спектр услуг — от дизайна до печати</h3>
-      <p class="text">
+    <section class="about">
+      <h2 class="title title--second about__title" id="about">1.О нас</h2>
+      <h3 class="title title--third about__title">Полный спектр услуг — от дизайна до печати</h3>
+      <p class="about__text">
         К вашим услугам мы предлагаем полный спектр работ, начиная от печати открыток,
         чертежей, баннеров, растяжек, создания буклетов и эксклюзивных календарей, и заканчивая
         постпечатной обработкой.
       </p>
-      <p class="text">
+      <p class="about__text">
         В копицентре не просто предоставляют услуги печати: мы ориентируемся на комплексное обслуживание.
         Все услуги, будь то оперативная цифровая печать открыток или разработка серии календарей,
         Вы можете получить в одном месте, воспользовавшись сопутствующими услугами копицентра.
       </p>
-      <p class="text">
+      <p class="about__text">
         При этом работа выполняется в максимально сжатые сроки и не в ущерб качеству конечного результата,
         которое неизменно остается на высоте.
       </p>
-      <ul class="info__list">
-        <li class="info__item">Приём и детальное обсуждение заказа</li>
-        <li class="info__item">Создание и согласование дизайн-макета</li>
-        <li class="info__item">Печать и постпечатная обработка изделий любых размеров</li>
-        <li class="info__item">Доставка готовой продукции</li>
+      <ul class="about__progress-list">
+        <li class="about__progress-list-item">Приём и детальное обсуждение заказа</li>
+        <li class="about__progress-list-item">Создание и согласование дизайн-макета</li>
+        <li class="about__progress-list-item">Печать и постпечатная обработка изделий любых размеров</li>
+        <li class="about__progress-list-item">Доставка готовой продукции</li>
       </ul>
     </section>
 
     <section class="services">
-      <h2 class="second-title" id="services">2.Услуги</h2>
+      <h2 class="title title--second services__title" id="services">2.Услуги</h2>
       <section class="services__item">
-        <h3 class="third-title services__title services__title--first">Широкоформатная печать баннеров, растяжек, афиш
+        <h3 class="title title--third services__title">Широкоформатная печать баннеров, растяжек, афиш
         </h3>
         <ul class="services__list">
           <li class="services__list-item">подготовка макетов к печати, дизайн рекламных баннеров</li>
@@ -92,40 +82,42 @@
             <button class="slider__button" type="button">Следующий</button>
           </div>
         </section>
-        <i class="services__text">Есть вопросы?</i>
-        <b class="services__text">Закажите консультацию</b>
-        <button class="button" type="button">Заказать</button>
+        <section class="services__callback-question">
+          <i class="services__text services__text--unimportant-info">Есть вопросы?</i>
+          <b class="services__text">Закажите консультацию</b>
+          <button class="button services__button" type="button">Заказать</button>
+        </section>
       </section>
 
       <section class="services__item">
-        <h3 class="third-title services__title services__title--second">Широкоформатная печать для вашего интерьера</h3>
+        <h3 class="title title--third services__title">Широкоформатная печать для вашего интерьера</h3>
         <p class="text">Печатаем широкоформатные фотографии на глянцевой и матовой фотобумаге разной
           плотности, на глянцевом и матовом холсте или на самоклеющейся пленке. Также можем предложить обработку
           и редактирование ваших фотографий силами наших дизайнеров: композиции, фотоколлаж, ретушь, различные эффекты
         </p>
-        <button class="button" type="button">Оставить заявку</button>
+        <button class="button services__button" type="button">Оставить заявку</button>
       </section>
 
       <section class="services__item">
-        <h3 class="third-title services__title services__title--third">Оперативная полиграфия — от визитки до баннера
+        <h3 class="title title--third services__title">Оперативная полиграфия — от визитки до баннера
         </h3>
-        <p class="text">
+        <p class="services__text">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
           dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
           ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
           eu fugiat nulla pariatur.
         </p>
-        <p class="text">
+        <p class="services__text">
           Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
           laborum. Sed ut perspiciatis unde omnis iste natus error. tatem accusantium doloremque laudantium,
         </p>
         <section class="services__form form">
           <i class="form__text">Есть вопросы?</i>
-          <b class="text text--bold">Оставьте заявку на консультацию</b>
+          <b class="text text--info form__text">Оставьте заявку на консультацию</b>
           <form>
             <input class="form__input" type="text" name="first-name" placeholder="Имя">
             <input class="form__input" type="tel" name="phone" placeholder="Телефон">
-            <button class="button" type="button">Отправить</button>
+            <button class="button form__button" type="button">Отправить</button>
           </form>
         </section>
       </section>
@@ -134,14 +126,14 @@
     <article class="comments">
       <h2 class="second-title visually-hidden" id="comments">3.Отзывы</h2>
       <section class="comments__slider slider">
-        <dl class="">
+        <dl class="slider__item">
           <dt>
             <b class="text">Александров Максим, 24 года</b>
             <a class="slider__link" href="vk.com/mr.sharp">vk.com/mr.sharp</a>
           </dt>
           <dd>
             <img class="slider__image" src="http://placehold.it/150x100" alt="фотография">
-            <p class="text">Обратился в компанию АртАктив за визитками. Это мой первый опыт,
+            <p class="comments__text">Обратился в компанию АртАктив за визитками. Это мой первый опыт,
               поэтому немного нервничал, не знал, с чего начать. Остался доволен, потому что мне
               всё объяснили, показали и сделали по высшему разряду. Советую!</p>
           </dd>
@@ -155,33 +147,33 @@
 
     <section class="faq">
       <h2 class="second-title" id="faq">4.Частые вопросы(FAQ)</h2>
-      <b class="text text--bold">Что такое макет?</b>
-      <p class="text">Макет — это будущее печатное изделие в электронном формате.
+      <b class="text text--info faq__text">Что такое макет?</b>
+      <p class="faq__text">Макет — это будущее печатное изделие в электронном формате.
         Верстают (собирают) макет в специализированном программном обеспечении. </p>
 
-      <b class="text text--bold">У меня есть готовый макет</b>
-      <p class="text">Вы можете привезти его к нам в офис на любом удобном для вас носителе (диск, флешка). В
+      <b class="text text--info faq__text">У меня есть готовый макет</b>
+      <p class="faq__text">Вы можете привезти его к нам в офис на любом удобном для вас носителе (диск, флешка). В
         присутствии вас мы обработаем ваш макет и отправим его в производство.</p>
 
-      <b class="text text--bold">У меня нет макета</b>
-      <p class="text">В нашем штате работают професиональные дизайнеры, которые с ваших слов или в вашем присутствии
+      <b class="text text--info faq__text">У меня нет макета</b>
+      <p class="faq__text">В нашем штате работают професиональные дизайнеры, которые с ваших слов или в вашем присутствии
         сверстают макет, который после утверждения также будет отправлен в печать.</p>
 
-      <b class="text text--bold">Сколько времени занимает печать?</b>
-      <p class="text">В том случае если изображение готово к печати, изготовление занимает около 3 часов. Также время
+      <b class="text text--info faq__text">Сколько времени занимает печать?</b>
+      <p class="faq__text">В том случае если изображение готово к печати, изготовление занимает около 3 часов. Также время
         изготовления зависит от нашей загруженности.</p>
 
-      <b class="text text--bold">Я не могу приехать к вам в офис</b>
-      <p class="text">Отправьте нам изображение по электронной почте, укажите свой телефон. Мы свяжемся с вами для
+      <b class="text text--info faq__text">Я не могу приехать к вам в офис</b>
+      <p class="faq__text">Отправьте нам изображение по электронной почте, укажите свой телефон. Мы свяжемся с вами для
         уточнения деталей. Готовое изделие мы доставим вам курьером.</p>
 
-      <b class="text text--bold">Вызов курьера бесплатный?</b>
-      <p class="text">В зависимости от соимости заказа, курьер может доставить вам продукцию бесплатно (при стоимости от
+      <b class="text text--info faq__text">Вызов курьера бесплатный?</b>
+      <p class="faq__text">В зависимости от соимости заказа, курьер может доставить вам продукцию бесплатно (при стоимости от
         600 руб.) или от 150 руб. в пределах Ярославля и до 500 руб. в пределах Ярославской области.</p>
 
       <section class="faq__form form">
         <i class="form__text">Остались вопросы?</i>
-        <b class="text text--bold">Оставьте заявку на консультацию</b>
+        <b class="text text--info form__text">Оставьте заявку на консультацию</b>
         <form>
           <input class="form__input" type="text" name="first-name" placeholder="Имя">
           <input class="form__input" type="tel" name="phone" placeholder="Телефон">
@@ -192,21 +184,31 @@
 
     <section class="contacts">
       <h2 class="second-title" id="contacts">5.Контакты</h2>
-      <p class="text">г. Ярославль, проспект Октября, 88</p>
-      <a class="text" href="mailto:art-aktiv.76@mail.ru">art-aktiv.76@mail.ru</a>
-      <a class="text" href="tel:+79201488131">+7 (920) 148 81 31</a>
+      <p class="contacts__text">г. Ярославль, проспект Октября, 88</p>
+      <a class="contacts__link" href="mailto:art-aktiv.76@mail.ru">art-aktiv.76@mail.ru</a>
+      <a class="contacts__link" href="tel:+79201488131">+7 (920) 148 81 31</a>
+      <section class="contacts__map">
+        <img class="contacts__map-image" src="http://placehold.it/150x100" alt="адрес на карте">
+      </section>
     </section>
   </main>
 
   <footer class="page-footer">
-    <section class="page-footer__map">
-      <img class="page-footer__map-image" src="http://placehold.it/150x100" alt="адрес на карте">
-    </section>
     <section class="page-footer__copyright">
       <a class="page-footer__copyright-link" href=#>Политика конфиденциальноси</a>
       <p class="page-footer__copyright-text">ООО «АртАктив», 2017 ©</p>
     </section>
   </footer>
+
+  <section class="form callback-form callback-form--display-none">
+    <i class="form__text">Есть вопросы?</i>
+    <b class="text text--info form__text">Закажите звонок</b>
+    <form>
+      <input class="form__input" type="text" name="first-name" placeholder="Имя">
+      <input class="form__input" type="tel" name="phone" placeholder="Телефон">
+      <button class="button form__button" type="button">Отправить</button>
+    </form>
+  </section>
 </body>
 
 </html>
