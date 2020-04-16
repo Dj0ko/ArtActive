@@ -8,20 +8,23 @@
 </head>
 
 <body>
+
   <header class="page-header">
-    <nav class="main-nav">
-      <a class="main-nav__logo">Artactive</a>
-      <button class="main-nav__toogle" type="button">Открыть меню</button>
-      <ul class="main-nav__list">
-        <li class="main-nav__list-item"><a href="#about">О нас</a></li>
-        <li class="main-nav__list-item"><a href="#services">Услуги</a></li>
-        <li class="main-nav__list-item"><a href="#comments">Отзывы</a></li>
-        <li class="main-nav__list-item"><a href="#faq">FAQ</a></li>
-        <li class="main-nav__list-item"><a href="#contacts">Контакты</a></li>
-      </ul>
-      <a class="main-nav__phone-link" href="tel:+79201488131">+7 (920) 148 81 31</a>
-      <button class="button main-nav__button" type="button">Заказать звонок</button>
-    </nav>
+    <div class="container">
+      <nav class="main-nav main-nav--closed">
+        <a class="main-nav__logo logo">Artactive</a>
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <ul class="main-nav__list">
+          <li class="main-nav__list-item"><a href="#about">О нас</a></li>
+          <li class="main-nav__list-item"><a href="#services">Услуги</a></li>
+          <li class="main-nav__list-item"><a href="#comments">Отзывы</a></li>
+          <li class="main-nav__list-item"><a href="#faq">FAQ</a></li>
+          <li class="main-nav__list-item"><a href="#contacts">Контакты</a></li>
+        </ul>
+        <a class="main-nav__phone-link" href="tel:+79201488131">+7 (920) 148 81 31</a>
+        <button class="button main-nav__button" type="button">Заказать звонок</button>
+      </nav>
+    </div>
   </header>
 
   <main class="page-main">
@@ -157,19 +160,23 @@
         присутствии вас мы обработаем ваш макет и отправим его в производство.</p>
 
       <b class="text text--info faq__text">У меня нет макета</b>
-      <p class="faq__text">В нашем штате работают професиональные дизайнеры, которые с ваших слов или в вашем присутствии
+      <p class="faq__text">В нашем штате работают професиональные дизайнеры, которые с ваших слов или в вашем
+        присутствии
         сверстают макет, который после утверждения также будет отправлен в печать.</p>
 
       <b class="text text--info faq__text">Сколько времени занимает печать?</b>
-      <p class="faq__text">В том случае если изображение готово к печати, изготовление занимает около 3 часов. Также время
+      <p class="faq__text">В том случае если изображение готово к печати, изготовление занимает около 3 часов. Также
+        время
         изготовления зависит от нашей загруженности.</p>
 
       <b class="text text--info faq__text">Я не могу приехать к вам в офис</b>
-      <p class="faq__text">Отправьте нам изображение по электронной почте, укажите свой телефон. Мы свяжемся с вами для
+      <p class="faq__text">Отправьте нам изображение по электронной почте, укажите свой телефон. Мы свяжемся с вами
+        для
         уточнения деталей. Готовое изделие мы доставим вам курьером.</p>
 
       <b class="text text--info faq__text">Вызов курьера бесплатный?</b>
-      <p class="faq__text">В зависимости от соимости заказа, курьер может доставить вам продукцию бесплатно (при стоимости от
+      <p class="faq__text">В зависимости от соимости заказа, курьер может доставить вам продукцию бесплатно (при
+        стоимости от
         600 руб.) или от 150 руб. в пределах Ярославля и до 500 руб. в пределах Ярославской области.</p>
 
       <section class="faq__form form">
@@ -210,6 +217,30 @@
       <button class="button form__button" type="button">Отправить</button>
     </form>
   </section>
+
+  <script>
+    let mainNav = document.querySelector('.main-nav'),
+      mainNavToggle = document.querySelector('.main-nav__toggle'),
+      mainNavList = document.querySelector('.main-nav__list'),
+      mainNavPhone = document.querySelector('.main-nav__phone-link'),
+      mainNavButton = document.querySelector('.main-nav__button');
+
+    mainNavToggle.addEventListener('click', function () {
+      if (mainNav.classList.contains('main-nav--closed')) {
+        mainNav.classList.remove('main-nav--closed');
+        mainNav.classList.add('main-nav--opened');
+        mainNavList.style.display = 'block';
+        mainNavPhone.style.display = 'block';
+        mainNavButton.style.display = 'block';
+      } else {
+        mainNav.classList.add('main-nav--closed');
+        mainNav.classList.remove('main-nav--opened');
+        mainNavList.style.display = 'none';
+        mainNavPhone.style.display = 'none';
+        mainNavButton.style.display = 'none';
+      }
+    });
+  </script>
 </body>
 
 </html>
