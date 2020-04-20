@@ -1,0 +1,9 @@
+.hero__text {
+  margin-bottom: 45px;
+  font-family: $muller;
+  font-size: 21px;
+  line-height: 25px;
+  font-weight: 500;
+}
+
+@import "./--alt/hero__text--alt.scss";

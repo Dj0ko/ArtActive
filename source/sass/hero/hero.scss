@@ -1,0 +1,11 @@
+.hero {
+  padding-top: 338px;
+
+  color: white;
+  background-image: url("../../images/intro-mobile.png"), url("../../images/glow-mobile.png");
+  background-repeat: no-repeat, no-repeat;
+  background-position: -19px 12px, 0 0;
+}
+
+@import "./__title/hero__title.scss";
+@import "./__text/hero__text.scss";

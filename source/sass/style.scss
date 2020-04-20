@@ -1,8 +1,11 @@
 @import "variables.scss";
 @import "fonts.scss";
 @import "global.scss";
-@import "../sass/page-header/page-header.scss";
-@import "../sass/container/container.scss";
-@import "../sass/logo/logo.scss";
-@import "../sass/main-nav/main-nav.scss";
+@import "./button/button.scss";
+@import "./page-header/page-header.scss";
+@import "./container/container.scss";
+@import "./logo-image/logo-image.scss";
+@import "./main-nav/main-nav.scss";
+@import "./hero/hero.scss";
+
 

@@ -1,11 +1,14 @@
-@import "../main-nav/__toggle/main-nav__toggle.scss";
-
 .main-nav {
   position: relative;
 
   width: 100%;
-
-  // background-color: purple;
-  // background-image: url("../page-header/background-mobile.jpg");
-  background-image: url('./image.png');
 }
+
+@import "./__toggle/main-nav__toggle.scss";
+@import "./__list/main-nav__list.scss";
+@import "./__list-item/main-nav__list-item.scss";
+@import "./__list-link/main-nav__list-link.scss";
+@import "./__phone-link/main-nav__pnone-link.scss";
+@import "./__button/main-nav__button.scss";
+
+
