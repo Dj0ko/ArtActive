@@ -1,4 +1,23 @@
 .about__progress-list-item {
+  position: absolute;
+  width: 130px;
   font-size: 13px;
   line-height: 18px;
+  text-align: center;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: -110px;
+    left: 8px;
+    width: 106px;
+    height: 106px;
+    background-color: #f0e2ff;
+    border-radius: 50%;
+  }
 }
+
+@import "./--ebook/about__progress-list-item--ebook.scss";
+@import "./--tablet/about__progress-list-item--tablet.scss";
+@import "./--writer/about__progress-list-item--writer.scss";
+@import "./--moving/about__progress-list-item--moving.scss";

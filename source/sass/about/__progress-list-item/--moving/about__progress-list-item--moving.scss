@@ -1,0 +1,18 @@
+.about__progress-list-item--moving {
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  &::after {
+    position: absolute;
+    content: "";
+
+    width: 71px;
+    height: 41px;
+
+    bottom: 72px;
+    left: 28px;
+    background-image: url("../../../../images/moving-mobile.png");
+    background-repeat: no-repeat;
+  }
+}

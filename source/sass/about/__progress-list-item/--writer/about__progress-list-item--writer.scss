@@ -1,0 +1,17 @@
+.about__progress-list-item--writer {
+  top: 397px;
+  left: -5px;
+
+  &::after {
+    position: absolute;
+    content: "";
+
+    width: 54px;
+    height: 54px;
+
+    bottom: 100px;
+    left: 32px;
+    background-image: url("../../../../images/writer-mobile.png");
+    background-repeat: no-repeat;
+  }
+}

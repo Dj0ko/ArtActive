@@ -1,0 +1,18 @@
+.about__progress-list-item--ebook {
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  &::after {
+    position: absolute;
+    content: "";
+
+    width: 54px;
+    height: 45px;
+
+    bottom: 69px;
+    left: 33px;
+    background-image: url("../../../../images/ebook-mobile.png");
+    background-repeat: no-repeat;
+  }
+}
