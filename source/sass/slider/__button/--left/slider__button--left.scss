@@ -1,0 +1,26 @@
+.slider__button--left {
+  &::before {
+    content: "";
+    position: absolute;
+
+    top: 5px;
+    left: 7px;
+
+    width: 80px;
+    height: 2px;
+    background-color: #883eca;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    border: solid #883eca;
+    border-width: 0 2px 2px 0;
+    padding: 5px;
+    transform: rotate(135deg);
+  }
+}

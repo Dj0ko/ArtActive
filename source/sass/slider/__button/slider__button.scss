@@ -1,0 +1,12 @@
+.slider__button {
+  cursor: pointer;
+  position: relative;
+  padding: 0;
+  border: none;
+  width: 91px;
+  height: 16px;
+  background-color: transparent;
+}
+
+@import "./--left/slider__button--left.scss";
+@import "./--right/slider__button--right.scss";

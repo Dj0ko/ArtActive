@@ -12,26 +12,21 @@
   <header class="page-header">
     <div class="container">
       <nav class="main-nav main-nav--closed">
-        <!-- <a class="main-nav__logo logo">Artactive</a> -->
         <a class="main-nav__link-logo" href="index.html">
           <img class="logo-image" src="images/logo-mobile.png" alt="логотип">
         </a>
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-        <ul class="main-nav__list">
-          <li class="main-nav__list-item"><a class="main-nav__list-link " href="#about">О нас</a></li>
-          <li class="main-nav__list-item"><a class="main-nav__list-link " href="#services">Услуги</a></li>
-          <li class="main-nav__list-item"><a class="main-nav__list-link " href="#comments">Отзывы</a></li>
-          <li class="main-nav__list-item"><a class="main-nav__list-link " href="#faq">FAQ</a></li>
-          <li class="main-nav__list-item"><a class="main-nav__list-link " href="#contacts">Контакты</a></li>
-          <li class="main-nav__list-item">
-            <a class="main-nav__phone-link" href="tel:+79201488131">+7 (920) 148 81 31</a>
-          </li>
-          <li class="main-nav__list-item">
-            <button class="button main-nav__button" type="button">Заказать звонок</button>
-          </li>
-        </ul>
-        <!-- <a class="main-nav__phone-link" href="tel:+79201488131">+7 (920) 148 81 31</a>
-        <button class="button main-nav__button" type="button">Заказать звонок</button> -->
+        <div class="main-nav__content-wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__list-item"><a class="main-nav__list-link" href="#about">О нас</a></li>
+            <li class="main-nav__list-item"><a class="main-nav__list-link" href="#services">Услуги</a></li>
+            <li class="main-nav__list-item"><a class="main-nav__list-link" href="#comments">Отзывы</a></li>
+            <li class="main-nav__list-item"><a class="main-nav__list-link" href="#faq">FAQ</a></li>
+            <li class="main-nav__list-item"><a class="main-nav__list-link" href="#contacts">Контакты</a></li>
+          </ul>
+          <a class="main-nav__phone-link" href="tel:+79201488131">+7 (920) 148 81 31</a>
+          <button class="button main-nav__button" type="button">Заказать звонок</button>
+        </div>
       </nav>
     </div>
   </header>
@@ -63,9 +58,12 @@
           которое неизменно остается на высоте.
         </p>
         <ul class="about__progress-list">
-          <li class="about__progress-list-item about__progress-list-item--ebook">Приём и детальное обсуждение заказа</li>
-          <li class="about__progress-list-item about__progress-list-item--tablet">Создание и согласование дизайн-макета</li>
-          <li class="about__progress-list-item about__progress-list-item--writer">Печать и постпечатная обработка изделий любых размеров</li>
+          <li class="about__progress-list-item about__progress-list-item--ebook">Приём и детальное обсуждение заказа
+          </li>
+          <li class="about__progress-list-item about__progress-list-item--tablet">Создание и согласование дизайн-макета
+          </li>
+          <li class="about__progress-list-item about__progress-list-item--writer">Печать и постпечатная обработка
+            изделий любых размеров</li>
           <li class="about__progress-list-item about__progress-list-item--moving">Доставка готовой продукции</li>
         </ul>
       </section>
@@ -85,26 +83,30 @@
           </ul>
           <section class="services__slider slider">
             <section>
-              <p class="slider__content">
-                <img class="slider__image" src="http://placehold.it/150x100" alt="баннер">
+              <div class="slider__content">
+                <img class="slider__image" src="./images/banner-mobile.jpg" alt="баннер">
                 <span>Растяжка на ул. Ленина</span>
-              </p>
+              </div>
             </section>
             <div class="slider__controls-wrapper">
-              <button class="slider__button" type="button">Предудыщий</button>
-              <button class="slider__button" type="button">Следующий</button>
+              <button class="slider__button slider__button--left" type="button">
+                <span class="visually-hidden">Предудыщий</span>
+              </button>
+              <button class="slider__button slider__button--right" type="button">
+                <span class="visually-hidden">Следующий</span>
+              </button>
             </div>
           </section>
           <section class="services__callback-question">
-            <i class="services__text services__text--unimportant-info">Есть вопросы?</i>
-            <b class="services__text">Закажите консультацию</b>
+            <i class="services__text services__text--unimportant">Есть вопросы?</i>
+            <b class="services__text services__text--2">Закажите консультацию</b>
             <button class="button services__button" type="button">Заказать</button>
           </section>
         </section>
 
         <section class="services__item">
           <h3 class="title title--third services__title">Широкоформатная печать для вашего интерьера</h3>
-          <p class="text">Печатаем широкоформатные фотографии на глянцевой и матовой фотобумаге разной
+          <p class="services__text">Печатаем широкоформатные фотографии на глянцевой и матовой фотобумаге разной
             плотности, на глянцевом и матовом холсте или на самоклеющейся пленке. Также можем предложить обработку
             и редактирование ваших фотографий силами наших дизайнеров: композиции, фотоколлаж, ретушь, различные эффекты
           </p>
@@ -232,19 +234,19 @@
   <script>
     let mainNav = document.querySelector('.main-nav'),
       mainNavToggle = document.querySelector('.main-nav__toggle'),
-      mainNavList = document.querySelector('.main-nav__list');
+      contentWrapper = document.querySelector('.main-nav__content-wrapper');
 
-    mainNavList.style.display = 'none';
+    contentWrapper.style.display = 'none';
 
     mainNavToggle.addEventListener('click', function () {
       if (mainNav.classList.contains('main-nav--closed')) {
         mainNav.classList.remove('main-nav--closed');
         mainNav.classList.add('main-nav--opened');
-        mainNavList.style.display = 'block';
+        contentWrapper.style.display = 'block';
       } else {
         mainNav.classList.add('main-nav--closed');
         mainNav.classList.remove('main-nav--opened');
-        mainNavList.style.display = 'none';
+        contentWrapper.style.display = 'none';
       }
     });
   </script>
