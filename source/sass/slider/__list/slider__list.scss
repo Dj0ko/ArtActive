@@ -1,0 +1,33 @@
+.slider__list {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+
+    top: -5px;
+    left: 0;
+
+    width: 290px;
+    height: 187px;
+    border-radius: 24px;
+
+    background-color: #b7b1bc;
+    z-index: -1;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+
+    top: -10px;
+    left: 0;
+
+    width: 290px;
+    height: 187px;
+    border-radius: 40px;
+
+    background-color: #e4dde8;
+    z-index: -2;
+  }
+}
