@@ -1,7 +1,4 @@
-.about {
-  margin-top: 65px;
-}
-
+@import "./--margin-top/about--margin-top.scss";
 @import "./__title/about__title.scss";
 @import "./__text/about__text.scss";
 @import "./__progress-list/about__progress-list.scss";
